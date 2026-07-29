@@ -1,12 +1,12 @@
 pipeline {
-
     agent any
 
     stages {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/shrutiminde26-dev/jira-login-page.git'
+                git branch: 'SCRUM-5-login-page',
+                url: 'https://github.com/shrutiminde26-dev/jira-login-page.git'
             }
         }
 
